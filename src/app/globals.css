@@ -5,17 +5,40 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #006c5c;
+  --secondary: #fdb600;
+  --grey66: #666666;
+  --lightOrange: #ffcf54;
+  --dark38: #003832;
+  --grey54: #545454;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #171717;
+    --primary: #006c5c;
+    --secondary: #fdb600;
+    --grey66: #666666;
+    --lightOrange: #ffcf54;
+    --dark38: #003832;
+    --grey54: #545454;
   }
+}
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  max-width: 1440px;
+}
+.backtext {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #d6d6d66b;
 }

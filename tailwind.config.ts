@@ -11,6 +11,17 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
+        lightOrange: "var(--lightOrange)",
+        grey66: "var(--grey66)",
+        dark38: "var(--dark38)",
+        grey54: "var(--grey54)",
+      },
+
+      fontFamily: {
+        sans: ["var(--font-sans)"],
+        raleway: ["var(--font-raleway)"],
       },
     },
   },
