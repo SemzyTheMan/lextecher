@@ -2,7 +2,7 @@ import Image from "next/image";
 import AboutImg from "../assets/about_us.png";
 const AboutUsSection = () => {
   return (
-    <section className="h-[42.75rem] grid grid-cols-2 place-items-center px-[4rem]">
+    <section className="h-[42.75rem] w-full grid grid-cols-2 place-items-center px-[4rem]">
       <Image src={AboutImg} width={450} height={410} alt="about_img" />
       <div className="relative">
         <h3 className="text-secondary">ABOUT US</h3>

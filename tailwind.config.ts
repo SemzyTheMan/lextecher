@@ -14,9 +14,12 @@ export default {
         primary: "var(--primary)",
         secondary: "var(--secondary)",
         lightOrange: "var(--lightOrange)",
+        lightGreen: "var(--lightGreen)",
         grey66: "var(--grey66)",
         dark38: "var(--dark38)",
         grey54: "var(--grey54)",
+        blue12: "var(--blue12)",
+        greyC9: "var(--greyC9)",
       },
 
       fontFamily: {
