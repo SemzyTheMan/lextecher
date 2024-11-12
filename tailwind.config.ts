@@ -20,6 +20,8 @@ export default {
         grey54: "var(--grey54)",
         blue12: "var(--blue12)",
         greyC9: "var(--greyC9)",
+        greyE8: "var(--greyE8)",
+        greyD9: "var(--greyD9)",
       },
 
       fontFamily: {

@@ -14,6 +14,8 @@
   --lightGreen: #f2fff8;
   --blue12: #000120;
   --greyC9: #6f6c90;
+  --greyE8: #767e85;
+  --greyD9: #d9d9d9;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,6 +31,8 @@
     --lightGreen: #f2fff8;
     --blue12: #000120;
     --greyC9: #6f6c90;
+    --greyE8: #767e85;
+    --greyD9: #d9d9d9;
   }
 }
 *,
@@ -135,7 +139,6 @@ body {
   width: 9px;
   height: 9px;
   display: flex;
-
   align-items: center;
   justify-content: center;
   border-radius: 50%;
