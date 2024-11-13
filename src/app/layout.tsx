@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Open_Sans, Raleway } from "next/font/google";
 import TopNav from "@/components/TopNav/TopNav";
+import Footer from "@/components/Footer/Footer";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
@@ -29,6 +30,7 @@ export default function RootLayout({
       <body className={`font-sans antialiased`}>
         <TopNav />
         <section className="mt-[5.25rem]"> {children}</section>
+        <Footer />
       </body>
     </html>
   );

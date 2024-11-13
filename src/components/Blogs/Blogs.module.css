@@ -1,0 +1,10 @@
+.Header {
+  background-image: url("/images/blog_header.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.LatestContainer {
+  border: 1px solid #1111111a;
+  border-radius: 16px;
+}

@@ -1,6 +1,14 @@
 import Image from "next/image";
 
-const BlogSection = () => {
+const BlogSection = ({
+  className,
+  hideTop,
+  hideButton,
+}: {
+  className?: string;
+  hideTop?: boolean;
+  hideButton?: boolean;
+}) => {
   const content = [
     {
       header:
@@ -36,14 +44,17 @@ Despite its widespread adoption, it cannot...`,
   ];
 
   return (
-    <section className="p-[4rem] relative">
-      <h3 className="text-center text-secondary">BLOG</h3>
-      <h2 className="text-dark38 text-center mb-16  font-raleway text-2xl font-semibold">
-        Here are some resources to keep you updated with industry trends
-      </h2>
-      <h1 className="backtext text-center text-[6rem] font-semibold absolute top-4 left-[50%] transform translate-x-[-50%]">
-        RESOURCES
-      </h1>
+    <section className={`p-[4rem] relative ${className}`}>
+      <div className={`${hideTop && "hidden"}`}>
+        <h3 className="text-center text-secondary">BLOG</h3>
+        <h2 className="text-dark38 text-center mb-16  font-raleway text-2xl font-semibold">
+          Here are some resources to keep you updated with industry trends
+        </h2>
+        <h1 className="backtext text-center text-[6rem] font-semibold absolute top-4 left-[50%] transform translate-x-[-50%]">
+          RESOURCES
+        </h1>
+      </div>
+
       <div className="grid grid-cols-3 gap-10 justify-items-center">
         {content.map((data, i) => (
           <BlogCard
@@ -54,7 +65,7 @@ Despite its widespread adoption, it cannot...`,
           />
         ))}
       </div>
-      <div className="flex justify-end">
+      <div className={`flex justify-end ${hideButton && "hidden"}`}>
         <button className="px-6 my-10  hover:opacity-[80%] h-10 rounded-[1.25rem] text-primary bg-secondary font-semibold">
           See all our blogs
         </button>

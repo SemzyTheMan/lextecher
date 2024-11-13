@@ -22,6 +22,7 @@ export default {
         greyC9: "var(--greyC9)",
         greyE8: "var(--greyE8)",
         greyD9: "var(--greyD9)",
+        greyC4: "var(--greyC4)",
       },
 
       fontFamily: {
