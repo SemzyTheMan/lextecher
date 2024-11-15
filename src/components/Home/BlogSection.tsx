@@ -86,14 +86,14 @@ const BlogCard = ({
   body: string;
 }) => {
   return (
-    <div className="w-[23.75rem] ">
+    <div className=" ">
       <Image
         src={`/images/blog-${imageNo}.png`}
         width={360}
         height={250}
         alt="blog_img"
       />
-      <h2 className="font-raleway text-xl h-[8rem] leading-8 text-dark38 font-semibold py-5">
+      <h2 className="font-raleway text-xl h-[9rem]  text-dark38 font-semibold py-5">
         {header}
       </h2>
       <p className="text-grey54 h-[4rem]">{body}</p>

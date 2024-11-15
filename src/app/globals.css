@@ -17,6 +17,7 @@
   --greyE8: #767e85;
   --greyD9: #d9d9d9;
   --greyC4: #c4c4c4;
+  --grey4C: #2b384c;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -34,7 +35,8 @@
     --greyC9: #6f6c90;
     --greyE8: #767e85;
     --greyD9: #d9d9d9;
-     --greyC4: #c4c4c4;
+    --greyC4: #c4c4c4;
+    --grey4C: #2b384c;
   }
 }
 *,

@@ -8,3 +8,36 @@
   border: 1px solid #1111111a;
   border-radius: 16px;
 }
+.TopHeader {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+.Text {
+  color: #545454;
+  line-height: 36px;
+}
+.ListContainer {
+  list-style: disc;
+  padding-left: 2rem;
+}
+.ListContainer > li {
+  color: #545454;
+  line-height: 36px;
+}
+.ListContainer > li > span {
+  text-decoration: underline;
+  color: #003832;
+  font-weight: 600;
+}
+.SocialContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.SocialContainer > p {
+  font-weight: 600;
+  color: #006c5c;
+  font-size: 1.125rem;
+  padding: 2rem 0;
+}
