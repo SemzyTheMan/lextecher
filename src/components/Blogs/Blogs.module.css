@@ -41,3 +41,24 @@
   font-size: 1.125rem;
   padding: 2rem 0;
 }
+.OrderedListContainer {
+  list-style: decimal;
+  color: #545454;
+  padding-left: 1rem;
+  line-height: 36px;
+}
+.UnorderedListContainer {
+  list-style: disc;
+  color: #545454;
+  padding-left: 2rem;
+  line-height: 36px;
+}
+.OrderedListContainer > li > span,
+.UnorderedListContainer > li > span {
+  color: #545454;
+  font-weight: 700;
+}
+.OrderedListContainer > li,
+.UnorderedListContainer > li {
+  padding: 1rem 0;
+}
