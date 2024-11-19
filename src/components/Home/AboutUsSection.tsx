@@ -32,7 +32,7 @@ const AboutUsSection = () => {
   return (
     <section
       ref={sectionRef}
-      className="md:h-[42.75rem] mt-[3rem] md:mt-0 w-full flex flex-col-reverse md:grid md:grid-cols-2 place-items-center px-8 md:px-[4rem]"
+      className="md:h-[42.75rem] overflow-x-hidden mt-[3rem] md:mt-0 w-full flex flex-col-reverse md:grid md:grid-cols-2 place-items-center px-8 md:px-[4rem]"
     >
       <motion.div
         initial={{ opacity: 0, x: -50 }}
@@ -80,7 +80,7 @@ const AboutUsSection = () => {
         <motion.h1
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.8,ease:"easeIn" }}
           className="backtext font-raleway text-[2rem] md:text-[6rem] md:leading-[6rem] font-semibold absolute top-0 md:-top-[1.4rem] left-0"
         >
           ABOUT US{" "}

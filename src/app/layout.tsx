@@ -31,7 +31,7 @@ export default function RootLayout({
       <body className={`font-sans antialiased`}>
         <ScrollProvider>
           <TopNav />
-          <section className="mt-[5.25rem]"> {children}</section>
+          <section className=""> {children}</section>
           <Footer />
         </ScrollProvider>
       </body>

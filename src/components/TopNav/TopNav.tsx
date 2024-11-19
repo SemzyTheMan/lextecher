@@ -34,7 +34,7 @@ const TopNav = () => {
   };
 
   return (
-    <nav className="w-full max-w-[1400px]  left-[50%] transform translate-x-[-50%] fixed top-0 !z-[9999]  flex h-[5.25rem] px-4 md:px-[4rem] items-center bg-primary">
+    <nav className="w-full max-w-[1400px]  left-[50%] transform  sticky top-0 !z-[9999]  flex h-[5.25rem] px-4 md:px-[4rem] items-center bg-primary">
       <Image
         src={"/images/logo.png"}
         className="mr-auto cursor-pointer"
