@@ -55,13 +55,15 @@ const OurTeamCard = ({
 }) => {
   return (
     <div className={`flex flex-col items-center ${className}`}>
-      <Image
-        src={`/images/team-${img}.jpeg`}
-        alt="team_img"
-        width={160}
-        height={160}
-        className="rounded-[50%]"
-      />
+      <div className="w-[160px] relative h-[160px] rounded-[50%]">
+        <Image
+          src={`/images/team-${img}.jpeg`}
+          alt="team_img"
+          fill
+          className="rounded-[50%]"
+        />
+      </div>
+
       <h1 className="text-dark38 mt-5 mb-2 text-[12px] text-nowrap  md:text-xl font-raleway font-semibold">
         {name}
       </h1>
