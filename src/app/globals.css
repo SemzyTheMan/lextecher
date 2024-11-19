@@ -47,12 +47,16 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
   overflow-x: hidden;
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
 }
 .backtext {
   -webkit-text-fill-color: transparent;

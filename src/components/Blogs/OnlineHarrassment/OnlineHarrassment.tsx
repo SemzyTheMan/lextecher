@@ -1,6 +1,7 @@
-import { BackIcon } from "@/components/icons/Others";
+"use client";
+
 import Image from "next/image";
-import { TopText } from "../Helpers";
+import { GoBack, TopText } from "../Helpers";
 import {
   FacebookIcon,
   InstagramIcon,
@@ -10,16 +11,13 @@ import styles from "../Blogs.module.css";
 
 const OnlineHarrassment = () => {
   return (
-    <div className="p-[4rem]">
-      <div className="flex text-grey4C items-center gap-2">
-        <BackIcon />
-        <p>Go Back</p>
-      </div>
+    <div className="p-5 md:p-[4rem]">
+      <GoBack />
       <h1 className={`${styles.TopHeader} font-raleway text-dark38`}>
         Online Harassment and Social Media: Understanding the Legal Implications
         & Reporting Mechanism in Nigeria
       </h1>
-      <div className="w-full  relative h-[34.75rem] rounded-[1.25rem]">
+      <div className="w-full  relative h-[11.3rem] md:h-[34.75rem] rounded-[1.25rem]">
         <Image
           src="/images/online-1.jpeg"
           className="rounded-[1.25rem]"
@@ -137,7 +135,7 @@ const OnlineHarrassment = () => {
           </li>
         </ul>
       </div>
-      <div className="w-full mt-[3rem] relative h-[34.75rem] rounded-[1.25rem]">
+      <div className="w-full mt-[3rem] relative h-[11.3rem] md:h-[34.75rem] rounded-[1.25rem]">
         <Image
           src="/images/online-2.jpeg"
           className="rounded-[1.25rem]"
@@ -241,7 +239,7 @@ const OnlineHarrassment = () => {
           </li>
         </ul>
       </div>
-      <div className="w-full mt-[3rem] relative h-[34.75rem] rounded-[1.25rem]">
+      <div className="w-full mt-[3rem] relative h-[11.3rem] md:h-[34.75rem] rounded-[1.25rem]">
         <Image
           src="/images/online-3.jpeg"
           className="rounded-[1.25rem]"

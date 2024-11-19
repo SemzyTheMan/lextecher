@@ -1,11 +1,12 @@
 import Image from "next/image";
-import { ItalicText, NumberedText } from "../Helpers";
+import { ItalicText, NumberedText, TopText } from "../Helpers";
+import styles from "../Blogs.module.css";
 
 const TheLawState2 = () => {
   return (
     <div>
       <NumberedText text="4 TORT" />
-      <p>
+      <p className={`${styles.Text}`}>
         A tort refers to a civil wrong committed against a person or property,
         independent of a contract. According to
         <span>Black&apos;s Law Dictionary</span> , a tort can be either a direct
@@ -37,7 +38,7 @@ const TheLawState2 = () => {
         of anarchy.
       </p>
       <NumberedText text="5. CRIMINAL LAW" />
-      <p>
+      <p className={`${styles.Text}`}>
         <span> Black&apos;s law Dictionary</span> defines a crime as an act
         committed or omitted, in violation of a public law, either forbidding or
         commanding it; a breach or violation of some public right or duty due to
@@ -114,7 +115,7 @@ const TheLawState2 = () => {
         NFTs as part of  their anti-money laundering laws. Specifically, in June
         2022, the European Union  agreed on anti-money laundering rules.
       </p>
-      <div className="w-full  relative h-[34.75rem] rounded-[1.25rem]">
+      <div className="w-full mt-[3rem]  relative h-[11.3rem] md:h-[34.75rem] rounded-[1.25rem]">
         <Image
           src="/images/lawstate-5.jpeg"
           className="rounded-[1.25rem]"
@@ -126,12 +127,12 @@ const TheLawState2 = () => {
         text="Taking the Bull by the Horn 
 "
       />
-      <p>
+      <p className={`${styles.Text}`}>
         The vulnerability of the users in the metaverse demands a discussion of
         the rules, regulations or laws that should be implemented in these
         virtual worlds:
       </p>
-      <ul>
+      <ul className={`${styles.UnorderedListContainer} ${styles.NoPadding}`}>
         <li>
           It is suggested that the way crime is viewed should be revisited,
           including the expansion of the scope of punitive actions, and
@@ -167,7 +168,7 @@ const TheLawState2 = () => {
           metaverse is yet to be seen but it could certainly deter some.
         </li>
       </ul>
-      <p>
+      <p className={`${styles.Text} mt-[2rem]`}>
         These approaches mentioned above have their own flaws. With the advent
         of the metaverse there will be a need to review and reconstruct criminal
         jurisprudence. Also, the principle of universal jurisdiction could be a
@@ -175,7 +176,7 @@ const TheLawState2 = () => {
         metaverse.
       </p>
       <NumberedText text="6. TAXATION REGULATIONS" />
-      <p>
+      <p className={`${styles.Text}`}>
         In a general sense, a tax is any contribution imposed by the government
         upon individuals and companies, for the use and service of the state/
         country. Major policy makers in the world are working on new tax rules
@@ -212,7 +213,7 @@ const TheLawState2 = () => {
         <br />
         The challenges involved in taxation include:
       </p>
-      <ul>
+      <ul className={`${styles.UnorderedListContainer} ${styles.NoPadding}`}>
         <li>
           Even after determining who, what, where, and to which authority taxes
           are owed, determining the tax base can present another challenge. If
@@ -226,7 +227,7 @@ const TheLawState2 = () => {
           can tax it.
         </li>
       </ul>
-      <p>
+      <p className={`${styles.Text} mt-[2rem]`}>
         Assuming you use a metaverse platform owned by a company in Germany to
         hire a specialist in Taiwan to virtually assist in the repair of your
         wind turbine off the Florida coast, which authorities can impose taxes?
@@ -242,7 +243,7 @@ const TheLawState2 = () => {
         develop a universal framework for Crypto taxes in an effort to foster
         agreement among jurisdictions.
       </p>
-      <div className="w-full  relative h-[34.75rem] rounded-[1.25rem]">
+      <div className="w-full mt-[2rem]  relative h-[11.3rem] md:h-[34.75rem] rounded-[1.25rem]">
         <Image
           src="/images/lawstate-6.jpeg"
           className="rounded-[1.25rem]"
@@ -252,7 +253,7 @@ const TheLawState2 = () => {
       </div>
       <NumberedText text="7. HUMAN RIGHTS IN THE METAVERSE" />
 
-      <p>
+      <p className={`${styles.Text}`}>
         <span> Osborne&apos;s 10th Concise Law Dictionary </span>
         defines a right as an interest recognized and protected by the law.
         <br />
@@ -312,7 +313,7 @@ const TheLawState2 = () => {
         aim are used.
       </p>
       <NumberedText text="DECEPTIVE DESIGN (DARK) PATTERNS  REGULATIONS" />
-      <p>
+      <p className={`${styles.Text}`}>
         Deceptive design patterns (also known as &quot;dark patterns&quot;) are
         tricks used in websites and applications that lure unsuspecting
         individuals into purchasing goods or sign up for various things. The
@@ -357,12 +358,15 @@ const TheLawState2 = () => {
         have real-time experience interacting with products before purchasing
         them.
       </p>
-      <ItalicText text="Types of Dark Patterns" />
-      <p>
+      <ItalicText
+        text="Types of Dark Patterns"
+        className="not-italic mt-[3rem]"
+      />
+      <p className={`${styles.Text}`}>
         The Federal Trade Commission (FTC) in its report identifies and focuses
         on four common dark pattern tactics which are as follows;
       </p>
-      <ul>
+      <ul className={`${styles.UnorderedListContainer} ${styles.NoPadding}`}>
         <li>
           <span>Misleading Consumers and Disguising Ads:</span> These tactics
           include advertisements designed to look like independent, editorial
@@ -390,10 +394,11 @@ const TheLawState2 = () => {
         </li>
       </ul>
       <ItalicText
+        className="not-italic mt-[3rem]"
         text="Initiatives to Combat Dark Patterns: Efforts of Law Enforcement and  Regulatory Bodies 
 "
       />
-      <p>
+      <p className={`${styles.Text}`}>
         The United States Federal Trade Commission (FTC) once revealed plans to
         investigate Amazon for its manipulative user interface. They believed it
         was tricking users into signing up for prime memberships. They also
@@ -405,7 +410,7 @@ const TheLawState2 = () => {
         the metaverse without constantly being manipulated into spending money,
         signing up for services they don’t need, or giving up their data.
       </p>
-      <div className="w-full  relative h-[34.75rem] rounded-[1.25rem]">
+      <div className="w-full mt-[3rem]  relative h-[11.3rem] md:h-[34.75rem] rounded-[1.25rem]">
         <Image
           src="/images/lawstate-7.jpeg"
           className="rounded-[1.25rem]"
@@ -414,7 +419,7 @@ const TheLawState2 = () => {
         />
       </div>
       <NumberedText text="9. TRANS-BOUNDARY DISPUTE RESOLUTION IN  THE METAVERSE" />
-      <p>
+      <p className={`${styles.Text}`}>
         For the purpose of this article, attention will be given to
         Jurisdictional differences, regulation and more extensively
         trans-boundary dispute resolution in the metaverse.
@@ -436,8 +441,11 @@ const TheLawState2 = () => {
         perspective of the way each country would regulate the metaverse. This
         might be the biggest barrier to achieving an interoperable Metaverse.
       </p>
-      <ItalicText text="Transboundary-dispute Resolution Mechanisms in the metaverse." />
-      <ol>
+      <ItalicText
+        className="not-italic mt-[3rem]"
+        text="Transboundary-dispute Resolution Mechanisms in the metaverse."
+      />
+      <ol className={`${styles.OrderedListContainer}`}>
         <li>
           <span>Terms & conditions (T & Cs):</span> Decentralised & centralised
           platforms alike provide terms & conditions of use. Once a user signs
@@ -445,8 +453,8 @@ const TheLawState2 = () => {
           the determination of the liabilities of all the parties involved as
           well as the dispute resolution mechanisms available. There is a
           likelihood that the choice of forum clauses in each Metaverse
-          platform's T&Cs might vary. For example, Decentraland’s T&Cs require
-          disputes to be resolved under the arbitration rules of the
+          platform&apos;s T&Cs might vary. For example, Decentraland’s T&Cs
+          require disputes to be resolved under the arbitration rules of the
           International Chamber of Commerce, with the arbitration seat in
           Panama. Sandbox has a jurisdiction clause in favour of the Hong Kong
           courts. Meanwhile, Roblox’s terms and conditions contain an express
@@ -459,7 +467,7 @@ const TheLawState2 = () => {
           thereby engaging forum shopping. This pattern has already began to
           show up in courts cases. In And v Reliantco Investments Ltd [2019]
           EWHC 879 a user of a cryptocurrency platform relied on the Brussels
-          Regulation to ask the English court to disregard the platform's
+          Regulation to ask the English court to disregard the platform&apos;s
           standard terms, which gave Cypriot courts exclusive jurisdiction. The
           court in that case concluded the user was a consumer under the
           Brussels Regulation and entitled to bring her claim in England. Users
@@ -468,7 +476,7 @@ const TheLawState2 = () => {
           when they begin to invest more money into the Metaverse. While a user
           would mostly have no negotiating power in this respect, businesses
           contemplating investing in a specific Metaverse platform might demand
-          the reviewing of the platform's T & C, which would encourage
+          the reviewing of the platform&apos;s T & C, which would encourage
           investment into that platform.
         </li>
         <li>
@@ -505,22 +513,74 @@ const TheLawState2 = () => {
           then given out in a smart contract immediately on the blockchain. Some
           of these platforms attach their pay-outs to escrow accounts, into
           which the parties must deposit a specific quantity of cryptocurrency
-          before receiving their rewards. Currently, the 'on the chain
-          arbitration' system is only capable of awarding money. These
+          before receiving their rewards. Currently, the &apos;on the chain
+          arbitration&apos; system is only capable of awarding money. These
           decentralised courts use a panel of judges which are then compensated
           via blockchain to adjudicate conflicts. For instance, in Kleros,
           chosen judges are informed that they have been appointed, along with
           any supporting documentation, and are given three days to submit their
           ruling based on a constrained set of smart contract choices, such as
-          "Reimburse Claimant" or "Extend Contract Deadline". Following that,
-          the smart contract enforces decisions on-chain. The arbitrators in
-          these decentralised tribunals are encouraged to choose the most
-          logical course of action. A bigger group of arbitrators may also hear
-          appeals of decisions (with a commensurate increase in the fees, which
-          are paid by the appealing party). By employing the technique of 'on
-          the chain dispute resolution', users are assured of justice.
+          &quot;Reimburse Claimant&quot; or &quot;Extend Contract
+          Deadline&quot;. Following that, the smart contract enforces decisions
+          on-chain. The arbitrators in these decentralised tribunals are
+          encouraged to choose the most logical course of action. A bigger group
+          of arbitrators may also hear appeals of decisions (with a commensurate
+          increase in the fees, which are paid by the appealing party). By
+          employing the technique of &apos;on the chain dispute
+          resolution&apos;, users are assured of justice.
         </li>
       </ol>
+      <p className={`${styles.Text}`}>
+        In conclusion, these are the avenues currently available for
+        transboundary dispute resolution and as time runs its course more
+        avenues will come into existence.{" "}
+      </p>
+      <div className="w-full mt-[3rem]  relative h-[11.3rem] md:h-[34.75rem] rounded-[1.25rem]">
+        <Image
+          src="/images/lawstate-8.jpeg"
+          className="rounded-[1.25rem]"
+          alt="online-header"
+          fill
+        />
+      </div>
+      <NumberedText text="10. LITIGATION" />
+      <p className={`${styles.Text}`}>
+        <span>Black’s Law Dictionary</span>
+        defines Litigation as a judicial controversy. It is also a contest in a
+        court of justice, for the purpose of enforcing a right. This leads to
+        the question whether legal actions can be initiated against an avatar in
+        the metaverse? Also do courts have jurisdiction to entertain claims of
+        acts and omissions committed in the virtual world? It is obvious that
+        some jurisdictions would adapt easily to holding claims in the
+        metaverse, while it may be a struggle for other jurisdictions. It is
+        believed that there would be slower adoption on the part of developing
+        nations. Already, legal actions have been taken against the theft of
+        virtual property in many countries, such as Japan, South Korea, and the
+        Netherlands.
+        <br />
+        <br /> Infact, some nations have begun holding court sessions in the
+        Metaverse. A Colombian court hosted its first legal trial in the
+        metaverse at the two-hour hearing held by Colombia&apos;s Magdalena
+        Administrative court, participants in a traffic dispute appeared as
+        avatars in a virtual courtroom. As such, the country emerged as the
+        first to test real legal hearings in the metaverse globally.
+      </p>
+      <TopText text="CONCLUSION AND RECOMMENDATION" />
+      <p className={`${styles.Text}`}>
+        Beyond the buzz, there are real legal implications in the AI-Metaverse
+        relationship. Contravening the law would most likely have legal
+        consequences. Thus, the virtual world is not a haven to carry out
+        illegal activities. The law is equally indispensable in the virtual
+        world. However, there is a lacuna in the law with regard to the virtual
+        world today. It is recommended that lawmakers around the world review
+        the existing laws and regulations for the law to take its full course in
+        the virtual world. Seeing that this would involve modifying a wide range
+        of laws and policies. To ensure the implementation of these reviewed
+        laws, it is not clear whether this is the obligation of each nation or
+        that of the Metaverse platform. Finally, it is recommended that users
+        and companies consult a lawyer for better guidance, as to the legal
+        implications regarding the virtual world.
+      </p>
     </div>
   );
 };

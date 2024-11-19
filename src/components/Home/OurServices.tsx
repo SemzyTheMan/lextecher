@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect, useRef } from "react";
 import {
   ContractIcon,
   CyberSecurityIcon,
@@ -11,17 +12,28 @@ import {
   TechAdvisoryIcon,
 } from "../icons/HomeIcons";
 import styles from "./Home.module.css";
+import { useScroll } from "@/context/ScrollContext";
+import { motion } from "framer-motion";
+
 const OurServices = () => {
+  const { registerSection } = useScroll();
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    registerSection("services", sectionRef.current);
+  }, []);
+
   return (
     <section
-      className={`${styles.Background} p-[4rem] w-full relative  h-fit bg-lightGreen`}
+      ref={sectionRef}
+      className={`${styles.Background} p-5 md:p-[4rem] w-full relative  h-fit bg-lightGreen`}
     >
       <h3 className="text-center text-secondary">OUR SERVICES</h3>
-      <h1 className="backtext text-center text-[6rem] font-semibold absolute top-0 left-[50%] transform translate-x-[-50%]">
+      <h1 className="backtext text-center text-[2rem] md:text-[6rem] font-semibold absolute top-[1rem] md:top-0 left-[50%] transform translate-x-[-50%]">
         OUR SERVICES
       </h1>
       <p className="text-dark38 text-center mb-16  font-raleway text-2xl font-semibold">{`What we do & how we can help you`}</p>
-      <div className="grid grid-cols-3 gap-14 justify-items-center">
+      <div className="grid md:grid-cols-3 gap-14 justify-items-center">
         <ContentCard
           icon={<ResearchIcon />}
           header="Research & Writing"
@@ -84,10 +96,17 @@ const ContentCard = ({
   body: string;
 }) => {
   return (
-    <div className="w-[20.125rem] flex flex-col gap-3 items-center place-items-center">
+    <motion.div
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeIn" }}
+      className="w-[20.125rem] flex flex-col gap-3 items-center place-items-center"
+    >
       {icon}
-      <h1 className="text-lg font-raleway font-semibold">{header}</h1>
-      <p className="text-center leading-8 text-grey54">{body}</p>
-    </div>
+      <h1 className=" md:text-lg font-raleway font-semibold">{header}</h1>
+      <p className="text-sm md:text-base text-center leading-8 text-grey54">
+        {body}
+      </p>
+    </motion.div>
   );
 };

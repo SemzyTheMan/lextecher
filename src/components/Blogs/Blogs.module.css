@@ -13,9 +13,27 @@
   font-weight: 600;
   margin-bottom: 3rem;
 }
+@media only screen and (max-width: 768px) {
+  .TopHeader {
+    font-size: 18px;
+    padding-top: 1rem;
+  }
+}
 .Text {
   color: #545454;
   line-height: 36px;
+}
+@media only screen and (max-width: 768px) {
+  .Text,
+  .OrderedListContainer,
+  .UnorderedListContainer,
+  .ListContainer {
+    font-size: 12px;
+    line-height: 28px;
+  }
+}
+.Text > span {
+  font-weight: 700;
 }
 .ListContainer {
   list-style: disc;
@@ -61,4 +79,7 @@
 .OrderedListContainer > li,
 .UnorderedListContainer > li {
   padding: 1rem 0;
+}
+.NoPadding > li {
+  padding: 0;
 }

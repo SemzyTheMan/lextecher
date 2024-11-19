@@ -103,7 +103,7 @@ const CryptoCurrency3 = () => {
           exceeding 1,000 EUR.
         </p>
       </div>
-      <div className="w-full relative h-[34.75rem] mt-[3rem] rounded-[1.25rem]">
+      <div className="w-full relative h-[11.3rem] md:h-[34.75rem]  mt-[3rem] rounded-[1.25rem]">
         <Image
           src="/images/crypto-9.jpeg"
           className="rounded-[1.25rem]"
@@ -368,7 +368,7 @@ REGULATORY REGIME FOR CRYPTO-ASSETS (THE  CONSULTATION)
           introducing a market abuse regime for crypto-assets.
         </li>
       </ul>{" "}
-      <div className="w-full relative mt-[3rem] h-[34.75rem] rounded-[1.25rem]">
+      <div className="w-full relative mt-[3rem] h-[11.3rem] md:h-[34.75rem]  rounded-[1.25rem]">
         <Image
           src="/images/crypto-10.png"
           className="rounded-[1.25rem]"
@@ -513,7 +513,7 @@ REGULATORY REGIME FOR CRYPTO-ASSETS (THE  CONSULTATION)
           by such owner.
         </li>
       </ol>
-      <div className="w-full relative mt-[3rem] h-[34.75rem] rounded-[1.25rem]">
+      <div className="w-full relative mt-[3rem] h-[11.3rem] md:h-[34.75rem]  rounded-[1.25rem]">
         <Image
           src="/images/crypto-11.jpeg"
           className="rounded-[1.25rem]"
@@ -678,7 +678,7 @@ REGULATORY REGIME FOR CRYPTO-ASSETS (THE  CONSULTATION)
         categorization, book value, and market value, providing greater
         transparency and accountability in the industry.
       </p>
-      <div className="w-full relative mt-[3rem] h-[34.75rem] rounded-[1.25rem]">
+      <div className="w-full relative mt-[3rem] h-[11.3rem] md:h-[34.75rem]  rounded-[1.25rem]">
         <Image
           src="/images/crypto-12.jpeg"
           className="rounded-[1.25rem]"

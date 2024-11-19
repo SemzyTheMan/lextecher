@@ -3,10 +3,11 @@ import styles from "./OurTeam.module.css";
 
 const OurTeamContent = () => {
   const nameClass =
-    "w-[16rem] text-dark38 font-semibold font-raleway text-[2rem]";
+    "w-[16rem] text-dark38 font-semibold leading-9 pt-3 md:pt-0 font-raleway text-xl md:text-[2rem]";
+    const roleClass = "py-3 md:py-5 text-greyE8 md:text-secondary md:text-xl ";
   return (
     <section>
-      <div className={`${styles.Header} h-[36.5rem] w-full`}>
+      <div className={`${styles.Header} h-[28.625rem] md:h-[36.5rem] w-full`}>
         <div className="w-full h-full gap-7 flex flex-col justify-center items-center">
           <p className="text-white font-semibold tracking-widest">OUR TEAM</p>
           <h1 className="font-raleway text-[2.5rem] text-dark38  font-bold">
@@ -14,18 +15,12 @@ const OurTeamContent = () => {
           </h1>
         </div>
       </div>
-      <div className="p-[4rem] grid grid-cols-[1fr_2fr] gap-[6rem]">
-        <Image
-          width={450}
-          height={600}
-          className="rounded-[1.25rem]"
-          src={"/images/team-1.jpeg"}
-          alt="team_member"
-        />
+      <div className="p-5 py-[3rem] md:p-[4rem] grid md:grid-cols-[1fr_2fr] md:gap-[6rem]">
+        <MyImage src={"/images/team-1.jpeg"} />
         <div>
           <h1 className={`${nameClass}`}>Iyinpemi Adegbenga</h1>
-          <p className="secondaryText">Founder</p>
-          <div className="flex flex-col gap-7 text-grey54 leading-9">
+          <p className={`${roleClass}`}>Founder</p>
+          <div className="flex flex-col gap-7 text-sm md:text-base text-grey54 leading-7 md:leading-9">
             <p>
               Iyinpemi is a law graduate from the University of Lagos. She is a
               legal researcher, writer, and tech consultant. Growing up with an
@@ -64,11 +59,11 @@ const OurTeamContent = () => {
           </div>
         </div>
       </div>
-      <div className="p-[4rem] bg-lightGreen grid grid-cols-[2fr_1fr] gap-[6rem]">
+      <div className="p-5 py-[3rem] md:p-[4rem] bg-lightGreen flex flex-col-reverse md:grid md:grid-cols-[2fr_1fr] md:gap-[6rem]">
         <div>
           <h1 className={`${nameClass}`}>Temilola Akinola</h1>
-          <p className="secondaryText">Co-Founder</p>
-          <div className="flex flex-col gap-7 text-grey54 leading-9">
+          <p className={`${roleClass}`}>Co-Founder</p>
+          <div className="flex flex-col gap-7 text-sm md:text-base text-grey54 leading-7 md:leading-9">
             <p>
               Temilola Akinola is a law graduate from the University of Lagos.
               She is a legal researcher, writer, and tech consultant.
@@ -83,26 +78,14 @@ const OurTeamContent = () => {
             </p>
           </div>
         </div>
-        <Image
-          width={450}
-          height={600}
-          className="rounded-[1.25rem]"
-          src={"/images/team-2.jpeg"}
-          alt="team_member"
-        />
+        <MyImage src={"/images/team-2.jpeg"} />
       </div>
-      <div className="p-[4rem] grid grid-cols-[1fr_2fr] gap-[6rem]">
-        <Image
-          width={450}
-          height={600}
-          className="rounded-[1.25rem]"
-          src={"/images/team-3.jpeg"}
-          alt="team_member"
-        />
+      <div className="p-5 py-[3rem] md:p-[4rem] grid md:grid-cols-[1fr_2fr] md:gap-[6rem]">
+        <MyImage src={"/images/team-3.jpeg"} />
         <div>
           <h1 className={`${nameClass}`}>Sunmibola Onifade</h1>
-          <p className="secondaryText">Co-Founder</p>
-          <div className="flex flex-col gap-7 text-grey54 leading-9">
+          <p className={`${roleClass}`}>Co-Founder</p>
+          <div className="flex flex-col gap-7 text-sm md:text-base text-grey54 leading-7 md:leading-9">
             <p>
               Sunmibola Onifade is a law graduate from the University of Lagos.
               She is a Legal researcher and writer
@@ -132,11 +115,11 @@ const OurTeamContent = () => {
           </div>
         </div>
       </div>
-      <div className="p-[4rem] bg-lightGreen grid grid-cols-[2fr_1fr] gap-[6rem]">
+      <div className="p-5 py-[3rem] md:p-[4rem] bg-lightGreen flex flex-col-reverse md:grid md:grid-cols-[2fr_1fr] md:gap-[6rem]">
         <div>
           <h1 className={`${nameClass}`}>Oluwatobiloba Aturu</h1>
-          <p className="secondaryText">Legal Researcher</p>
-          <div className="flex flex-col gap-7 text-grey54 leading-9">
+          <p className={`${roleClass}`}>Legal Researcher</p>
+          <div className="text-sm md:text-base text-grey54 leading-7 md:leading-9">
             <p>
               Oluwatobiloba Aturu is a Law student at the University of Lagos.
               He is among the Legal researchers and writers at Lex Techker where
@@ -151,26 +134,14 @@ const OurTeamContent = () => {
             </p>
           </div>
         </div>
-        <Image
-          width={450}
-          height={600}
-          className="rounded-[1.25rem]"
-          src={"/images/team-4.jpeg"}
-          alt="team_member"
-        />
+        <MyImage src={"/images/team-4.jpeg"} />
       </div>
-      <div className="p-[4rem] grid grid-cols-[1fr_2fr] gap-[6rem]">
-        <Image
-          width={450}
-          height={600}
-          className="rounded-[1.25rem]"
-          src={"/images/team-5.jpeg"}
-          alt="team_member"
-        />
+      <div className="p-5 py-[3rem] md:p-[4rem] grid md:grid-cols-[1fr_2fr] md:gap-[6rem]">
+        <MyImage src={"/images/team-5.jpeg"} />
         <div>
           <h1 className={`${nameClass}`}>Femi Kolawole</h1>
-          <p className="secondaryText">Legal Researcher</p>
-          <div className="flex flex-col gap-7 text-grey54 leading-9">
+          <p className={`${roleClass}`}>Legal Researcher</p>
+          <div className="text-sm md:text-base text-grey54 leading-7 md:leading-9">
             <p>
               Femi Kolawole is a Law graduate from the University of Lagos and
               he is one of the Legal researchers and writers. Having gained a
@@ -183,19 +154,19 @@ const OurTeamContent = () => {
           </div>
         </div>
       </div>
-      <div className="p-[4rem] bg-lightGreen grid grid-cols-[2fr_1fr] gap-[6rem]">
+      <div className="p-5 py-[3rem] md:p-[4rem] bg-lightGreen flex flex-col-reverse md:grid md:grid-cols-[2fr_1fr] md:gap-[6rem]">
         <div>
           <h1 className={`${nameClass}`}>Tolulope Idowu</h1>
-          <p className="secondaryText">Lead Lawyer</p>
-          <div className="flex flex-col gap-7 text-grey54 leading-9">
+          <p className={`${roleClass}`}>Lead Lawyer</p>
+          <div className="text-sm md:text-base text-grey54 leading-7 md:leading-9">
             <p>
               Tolulope Idowu is a legal practitioner. He is currently the Lead
               Associate at A.A. Ademidun & Co, Ibadan, Oyo state. Through his
               years of practicing Law, Tolulope has become an expert in
-              navigating the legal complexities of Nigeria&apos;s digital economy.
-              Already called to the Nigerian Bar as a barrister and solicitor of
-              the Supreme Court of Nigeria, Tolulope possesses an in-depth
-              understanding of Nigerian law which keeps improving as he
+              navigating the legal complexities of Nigeria&apos;s digital
+              economy. Already called to the Nigerian Bar as a barrister and
+              solicitor of the Supreme Court of Nigeria, Tolulope possesses an
+              in-depth understanding of Nigerian law which keeps improving as he
               practices. In addition to this, Tolulope is very passionate about
               the emerging field of Data Protection especially in Africa. As a
               result, he is a member of Lex Techker where he heads the legal
@@ -203,26 +174,14 @@ const OurTeamContent = () => {
             </p>
           </div>
         </div>
-        <Image
-          width={450}
-          height={600}
-          className="rounded-[1.25rem]"
-          src={"/images/team-6.jpeg"}
-          alt="team_member"
-        />
+        <MyImage src={"/images/team-6.jpeg"} />
       </div>
-      <div className="p-[4rem] grid grid-cols-[1fr_2fr] gap-[6rem]">
-        <Image
-          width={450}
-          height={600}
-          className="rounded-[1.25rem]"
-          src={"/images/team-7.jpeg"}
-          alt="team_member"
-        />
+      <div className="p-5 py-[3rem] md:p-[4rem] grid md:grid-cols-[1fr_2fr] md:gap-[6rem]">
+        <MyImage src={"/images/team-7.jpeg"} />
         <div>
           <h1 className={`${nameClass}`}>Salome Olonode</h1>
-          <p className="secondaryText">Assisting Lawyer</p>
-          <div className="flex flex-col gap-7 text-grey54 leading-9">
+          <p className={`${roleClass}`}>Assisting Lawyer</p>
+          <div className="text-sm md:text-base text-grey54 leading-7 md:leading-9">
             <p>
               Salome Olonode is a legal and compliance officer at both the
               Fintech Industry and Lex Techker. She has worked with clients
@@ -240,3 +199,9 @@ const OurTeamContent = () => {
 };
 
 export default OurTeamContent;
+const MyImage = ({ src }: { src: string }) => (
+  <div className="w-full relative h-[400px] md:w-[450px] md:h-[450px]">
+    {" "}
+    <Image fill className="rounded-[1.25rem]" src={src} alt="team_member" />
+  </div>
+);

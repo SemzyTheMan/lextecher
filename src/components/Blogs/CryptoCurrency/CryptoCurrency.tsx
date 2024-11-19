@@ -1,20 +1,18 @@
-import { BackIcon } from "@/components/icons/Others";
+"use client"
+
 import styles from "../Blogs.module.css";
 import Image from "next/image";
-import { NumberedText, TopText } from "../Helpers";
+import { GoBack, NumberedText, TopText } from "../Helpers";
 import CrypytoCurrency2 from "./CrypytoCurrency2";
 import CryptoCurrency3 from "./CryptoCurrency3";
 const CryptoCurrency = () => {
   return (
-    <div className="p-[4rem]">
-      <div className="flex text-grey4C items-center gap-2">
-        <BackIcon />
-        <p>Go Back</p>
-      </div>
+    <div className="p-5 md:p-[4rem]">
+      <GoBack />
       <h1 className={`${styles.TopHeader} font-raleway text-dark38`}>
         Cryptocurrency: Where do the Regulations Tilt?
       </h1>
-      <div className="w-full  relative h-[34.75rem] rounded-[1.25rem]">
+      <div className="w-full  relative h-[11.3rem] md:h-[34.75rem] rounded-[1.25rem]">
         <Image
           src="/images/crypto-1.jpeg"
           className="rounded-[1.25rem]"
@@ -135,7 +133,7 @@ const CryptoCurrency = () => {
           tokens must carefully navigate the legal requirements to ensure
           compliance and legitimacy.`}
         </p>
-        <div className="w-full  relative h-[34.75rem] rounded-[1.25rem]">
+        <div className="w-full  relative h-[11.3rem] md:h-[34.75rem]  rounded-[1.25rem]">
           <Image
             src="/images/crypto-2.jpeg"
             className="rounded-[1.25rem]"
@@ -248,7 +246,7 @@ const CryptoCurrency = () => {
           assets.{" "}
         </p>
 
-        <div className="w-full  relative h-[34.75rem] rounded-[1.25rem]">
+        <div className="w-full  relative h-[11.3rem] md:h-[34.75rem] rounded-[1.25rem]">
           <Image
             src="/images/crypto-3.jpeg"
             className="rounded-[1.25rem]"
@@ -334,7 +332,7 @@ const CryptoCurrency = () => {
           engaging with DeFi tokens, as the market can be highly volatile, and
           risks are inherent in decentralized finance.
         </p>
-        <div className="w-full  relative h-[34.75rem] rounded-[1.25rem]">
+        <div className="w-full  relative h-[11.3rem] md:h-[34.75rem]  rounded-[1.25rem]">
           <Image
             src="/images/crypto-4.jpeg"
             className="rounded-[1.25rem]"
@@ -461,7 +459,7 @@ const CryptoCurrency = () => {
           helps in identifying potential risks associated with various virtual
           currency  models. 
         </p>
-        <div className="w-full  relative h-[34.75rem] rounded-[1.25rem]">
+        <div className="w-full  relative h-[11.3rem] md:h-[34.75rem]  rounded-[1.25rem]">
           <Image
             src="/images/crypto-5.jpeg"
             className="rounded-[1.25rem]"
@@ -583,7 +581,7 @@ const CryptoCurrency = () => {
             regime in a country.
           </li>
         </ul>
-        <div className="w-full  relative h-[34.75rem] rounded-[1.25rem]">
+        <div className="w-full  relative h-[11.3rem] md:h-[34.75rem]  rounded-[1.25rem]">
           <Image
             src="/images/crypto-6.jpeg"
             className="rounded-[1.25rem]"

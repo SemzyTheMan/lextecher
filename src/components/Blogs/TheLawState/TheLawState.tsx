@@ -6,13 +6,13 @@ import Image from "next/image";
 import TheLawState2 from "./TheLawState2";
 const TheLawState = () => {
   return (
-    <section className="p-[4rem]">
-      <GoBack onClick={() => {}} />
+    <section className="p-5 md:p-[4rem]">
+      <GoBack />
       <h1 className={`${styles.TopHeader} font-raleway text-dark38`}>
         Is the Law dead in the AI-Metaverse relationship? The Application of Law
         in the Metaverse
       </h1>
-      <div className="w-full  relative h-[34.75rem] rounded-[1.25rem]">
+      <div className="w-full  relative mb-[3rem] h-[11.3rem] md:h-[34.75rem] rounded-[1.25rem]">
         <Image
           src="/images/lawstate-1.jpeg"
           className="rounded-[1.25rem]"
@@ -20,7 +20,7 @@ const TheLawState = () => {
           fill
         />
       </div>
-      <p>
+      <p className={`${styles.Text}`}>
         Today, almost everyone aspires to be tech-savvy, especially with the
         digital innovations heating up our world. There has simultaneously
         arisen a need to examine not only the law as it is, but also as it
@@ -43,7 +43,7 @@ const TheLawState = () => {
         non-conventional nature of the virtual world.
       </p>
       <TopText text="INTRODUCTION" />
-      <p>
+      <p className={`${styles.Text}`}>
         The Metaverse is the next itinerary of the internet, which has created
         an avenue for people to recreate their daily activities such as buying
         real estate, holding court sessions, working, attending classes, and
@@ -60,7 +60,7 @@ const TheLawState = () => {
         of its users.
       </p>
       <TopText text="ANATOMY OF THE METAVERSE" />
-      <p>
+      <p className={`${styles.Text}`}>
         There exist multiple definitions of the term metaverse. However, as
         deduced from its name, it is a combination of two words ‘Meta’ and
         ‘Verse&apos;. Meta comes from the Greek prefix meta, which means
@@ -105,11 +105,11 @@ const TheLawState = () => {
         text="THE AI-METAVERSE
  RELATIONSHIP"
       />
-      <p>
+      <p className={`${styles.Text}`}>
         AI has become a significant part of the metaverse, some of the roles it
         plays in the metaverse include;
       </p>
-      <ul>
+      <ul className={`${styles.UnorderedListContainer} ${styles.NoPadding}`}>
         <li>
           Identifying and reporting the instances of intellectual property
           rights infringements across the Metaverse.
@@ -150,7 +150,7 @@ const TheLawState = () => {
           immersive experience.
         </li>
       </ul>
-      <div className="w-full  relative h-[34.75rem] rounded-[1.25rem]">
+      <div className="w-full mt-[3rem] relative h-[11.3rem] md:h-[34.75rem] rounded-[1.25rem]">
         <Image
           src="/images/lawstate-2.jpeg"
           className="rounded-[1.25rem]"
@@ -166,7 +166,7 @@ const TheLawState = () => {
       <NumberedText
         text={" 1. Contract Law and Law of Commercial Transactions".toUpperCase()}
       />
-      <p>
+      <p className={`${styles.Text}`}>
         The major question here is whether the laws of Contract and commercial
         transactions would apply to contracts and transactions taking place in
         the metaverse
@@ -223,7 +223,7 @@ const TheLawState = () => {
         similar among nations.
       </p>
       <NumberedText text={"Intellectual Property Law".toUpperCase()} />
-      <p>
+      <p className={`${styles.Text}`}>
         According to the World Intellectual Property Organisation (WIPO),
         intellectual property (IP) refers to creations of the mind, such as
         inventions, literary and artistic works, designs, and symbols, names and
@@ -252,7 +252,7 @@ const TheLawState = () => {
         applicability in the metaverse.
       </p>
       <ItalicText text="Copyright" />
-      <p>
+      <p className={`${styles.Text}`}>
         WIPO defines Copyright to be a legal term used to describe the rights
         that creators have over their literary and artistic works. Works covered
         by copyright range from books, music, paintings, sculpture and films, to
@@ -274,7 +274,7 @@ const TheLawState = () => {
         &apos;virtual horse’ created within the Metaverse. The court eventually
         dismissed both claims.
       </p>
-      <div className="w-full  relative h-[34.75rem] rounded-[1.25rem]">
+      <div className="w-full mt-[3rem]  relative h-[11.3rem] md:h-[34.75rem] rounded-[1.25rem]">
         <Image
           src="/images/lawstate-3.jpeg"
           className="rounded-[1.25rem]"
@@ -283,7 +283,7 @@ const TheLawState = () => {
         />
       </div>
       <ItalicText text="Patent" />
-      <p>
+      <p className={`${styles.Text}`}>
         WIPO defines patent as an exclusive right granted for an invention.
         Generally speaking, a patent provides the patent owner with the right to
         decide how orwhether the invention can be used by others. In exchange
@@ -298,7 +298,7 @@ const TheLawState = () => {
         <br />
         In the Metaverse, these components require patent;
       </p>
-      <ul>
+      <ul className={`${styles.UnorderedListContainer} ${styles.NoPadding}`}>
         <li>
           Patent of Metaverse technology and AI, which itself can be divided
           into hardware & software technologies needed for building a custom &
@@ -312,14 +312,14 @@ const TheLawState = () => {
         </li>
         <li>Patents created by avatars and companies within Metaverse.</li>
       </ul>
-      <p>
+      <p className={`${styles.Text} mt-[2rem]`}>
         Companies developing metaverse-related technologies must protect their
         inventions through patents. Currently, the majority of the
         metaverse-related patents are either in the VR (Virtual Reality) or AR
         (Augmented Reality) space.
       </p>
       <ItalicText text="Trademark" />
-      <p>
+      <p className={`${styles.Text}`}>
         WIPO defines a trademark as a sign capable of distinguishing the goods
         or services of one enterprise from those of another. Trade mark includes
         words, marks, symbols, colours, and even the sound employed by a company
@@ -345,7 +345,7 @@ const TheLawState = () => {
         non-traditional trademark registrable.
       </p>
       <ItalicText text="Industrial design" />
-      <p>
+      <p className={`${styles.Text}`}>
         WIPO defined an industrial design to constitute the ornamental or
         aesthetic aspect of an article. A design may consist of
         three-dimensional features, such as the shape or surface of an article,
@@ -361,7 +361,7 @@ const TheLawState = () => {
         digital embodiment.
       </p>
       <ItalicText text="Geographical indications" />
-      <p>
+      <p className={`${styles.Text}`}>
         WIPO also defines geographical indications and appellations of origin as
         signs used on goods that have a specific geographical origin and possess
         qualities, a reputation or characteristics that are essentially
@@ -372,7 +372,7 @@ const TheLawState = () => {
         geographical significance.
       </p>
       <ItalicText text="Trade Secrets" />
-      <p>
+      <p className={`${styles.Text}`}>
         WIPO defines trade secrets as IP rights on confidential information
         which may be sold or licensed. The unauthorized acquisition, use or
         disclosure of such secret information in a manner contrary to honest
@@ -383,7 +383,7 @@ const TheLawState = () => {
         encourage Intellectual Property theft. The following are great ways to
         ensure your intellectual property rights are protected:
       </p>
-      <ul>
+      <ul className={`${styles.UnorderedListContainer} ${styles.NoPadding}`}>
         <li>
           <span>Immediately notify the platform of infringing activity:</span>{" "}
           If you discover that your intellectual property has been infringed in
@@ -415,7 +415,7 @@ const TheLawState = () => {
           intellectual property ownership.
         </li>
       </ul>
-      <div className="w-full  relative h-[34.75rem] rounded-[1.25rem]">
+      <div className="w-full mt-[3rem] relative h-[11.3rem] md:h-[34.75rem] rounded-[1.25rem]">
         <Image
           src="/images/lawstate-4.png"
           className="rounded-[1.25rem]"
@@ -424,7 +424,7 @@ const TheLawState = () => {
         />
       </div>
       <NumberedText text="3. INSURANCE LAW" />
-      <p>
+      <p className={`${styles.Text}`}>
         Insurance contract is a contract where one party (the insurance company)
         agrees to indemnify the other party (the insured) for a risk that could
         occur to the subject matter of the agreement, in exchange for a premium
@@ -440,7 +440,7 @@ const TheLawState = () => {
         would generally depend on policies and regulations from different
         countries.
       </p>
-      <TheLawState2/>
+      <TheLawState2 />
     </section>
   );
 };

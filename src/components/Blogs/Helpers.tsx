@@ -1,8 +1,9 @@
+import { useRouter } from "next/navigation";
 import { BackIcon } from "../icons/Others";
 
 export const TopText = ({ text }: { text: string }) => {
   return (
-    <p className="text-xl py-[3rem] font-semibold font-raleway text-secondary">
+    <p className="text-lg md:text-xl py-[2rem] md:py-[3rem] font-semibold font-raleway text-secondary">
       {text}
     </p>
   );
@@ -16,7 +17,7 @@ export const NumberedText = ({
 }) => {
   return (
     <p
-      className={`text-lg py-[3rem] font-bold font-raleway text-primary ${className}`}
+      className={`md:text-lg py-[3rem] font-bold font-raleway text-primary ${className}`}
     >
       {text}
     </p>
@@ -32,15 +33,21 @@ export const ItalicText = ({
 }) => {
   return (
     <p
-      className={` italic py-[3rem] font-medium pl-[1rem] font-raleway text-primary ${className}`}
+      className={` italic py-[1rem] font-medium pl-[1rem] font-raleway text-primary ${className}`}
     >
       . {text}
     </p>
   );
 };
-export const GoBack = ({ onClick }: { onClick: () => void }) => (
-  <div onClick={onClick} className="flex text-grey4C items-center gap-2">
-    <BackIcon />
-    <p>Go Back</p>
-  </div>
-);
+export const GoBack = () => {
+  const router = useRouter();
+  return (
+    <div
+      onClick={() => router.back()}
+      className="flex cursor-pointer hover:opacity-50 text-grey4C items-center gap-2"
+    >
+      <BackIcon />
+      <p>Go Back</p>
+    </div>
+  );
+};

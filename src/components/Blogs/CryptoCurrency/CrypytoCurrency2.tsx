@@ -5,7 +5,7 @@ const CrypytoCurrency2 = () => {
   return (
     <div>
       <div>
-        <div className="w-full  relative h-[34.75rem] rounded-[1.25rem]">
+        <div className="w-full  relative h-[11.3rem] md:h-[34.75rem]  rounded-[1.25rem]">
           <Image
             src="/images/crypto-7.jpeg"
             className="rounded-[1.25rem]"
@@ -225,7 +225,7 @@ const CrypytoCurrency2 = () => {
           compliant environment within the cryptocurrency industry.
         </p>
       </div>
-      <div className="w-full relative h-[34.75rem] mt-[3rem] rounded-[1.25rem]">
+      <div className="w-full relative h-[11.3rem] md:h-[34.75rem]  mt-[3rem] rounded-[1.25rem]">
         <Image
           src="/images/crypto-8.jpeg"
           className="rounded-[1.25rem]"
@@ -459,7 +459,7 @@ const CrypytoCurrency2 = () => {
           limited tax compliance risks, which include:
         </p>
         <ol className={`${styles.OrderedListContainer}`}>
-          <li  className="!py-0">
+          <li className="!py-0">
             The Crypto-Assets which the Reporting Crypto-Asset Service Provider
             has adequately determined cannot be used for payment or investment
             purposes. This exclusion builds on the scope of the virtual asset

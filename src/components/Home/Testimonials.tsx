@@ -2,12 +2,12 @@ import Carousel from "../Carousel/Carousel";
 import styles from "./Home.module.css";
 const Testimonials = () => {
   return (
-    <section className="bg-lightGreen relative p-[4rem]">
+    <section className="bg-lightGreen relative p-5 md:p-[4rem]">
       <h3 className="text-center text-secondary">TESTIMONIALS</h3>
-      <h2 className="text-dark38 text-center mb-16  font-raleway text-2xl font-semibold">
+      <h2 className="text-dark38 text-center mb-16  font-raleway text-lg md:text-2xl font-semibold">
         Hear what others are saying about us
       </h2>
-      <h1 className="backtext text-center text-[6rem] font-semibold absolute top-4 left-[50%] transform translate-x-[-50%]">
+      <h1 className="backtext text-center text-[2rem] md:text-[6rem] font-semibold absolute top-4 left-[50%] transform translate-x-[-50%]">
         TESTIMONIALS
       </h1>
       <div>
@@ -53,12 +53,14 @@ const TestimonialCard = ({
 }) => {
   return (
     <div
-      className={`${styles.TestimonialCard} h-[25rem] p-10 w-[37.8125rem] rounded-[1.25rem] bg-white text-grey66`}
+      className={`${styles.TestimonialCard} w-[18.75rem] h-[15.625rem]  md:h-[25rem] p-10 md:w-[37.8125rem] rounded-[1.25rem] bg-white text-grey66`}
     >
-      <p className="leading-8 h-[17rem]">{testimony}</p>
-      <div className="">
-        <h2 className="font-raleway text-blue12 text-lg font-bold">{name}</h2>
-        <p className="text-greyC9">{position}</p>
+      <p className="md:leading-8 md:h-[17rem] text-[10px] md:text-base">
+        {testimony}
+      </p>
+      <div className="mt-[1rem] md:mt-0">
+        <h2 className="font-raleway text-blue12 text-[10px] md:text-lg font-bold">{name}</h2>
+        <p className="text-greyC9 text-[8px] md:text-base">{position}</p>
       </div>
     </div>
   );

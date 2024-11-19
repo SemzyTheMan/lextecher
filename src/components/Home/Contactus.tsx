@@ -1,18 +1,32 @@
+"use client";
 import Image from "next/image";
 import { ContactDate } from "../icons/HomeIcons";
-import styles from "./Home.module.css"
+import styles from "./Home.module.css";
+import { useEffect, useRef } from "react";
+import { useScroll } from "@/context/ScrollContext";
 const Contactus = () => {
+  const { registerSection } = useScroll();
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    registerSection("contact", sectionRef.current);
+  }, []);
+
   return (
-    <section className={`p-[4rem] grid grid-cols-2 place-items-center bg-lightGreen ${styles.Background}`}>
+    <section
+      ref={sectionRef}
+      id="#contact"
+      className={`p-5 md:p-[4rem]  grid md:grid-cols-2 place-items-center bg-lightGreen ${styles.Background}`}
+    >
       <div className="relative">
         <h2 className="text-secondary">CONTACT</h2>
-        <p className="text-primary  mb-8 mt-5  font-raleway text-2xl font-semibold">
+        <p className="text-primary  mb-8 md:mt-5  font-raleway text-lg md:text-2xl font-semibold">
           Here is how you can reach us
         </p>
-        <h2 className="backtext text-center text-[6rem] font-semibold absolute -top-8 left-0 ">
+        <h2 className="backtext text-center text-[2rem] md:text-[6rem] font-semibold absolute -top-3 md:-top-8 left-0 ">
           CONTACT
         </h2>
-        <p className="text-grey54 mb-[4rem] leading-9">
+        <p className="text-grey54 text-sm md:text-base mb-[4rem] leading-7 md:leading-9">
           {` We're here to help and answer any question you might have. We look
           forward to hearing from you. We'll assess your situation and offer
           opinion on what you might need to do next. For general inquiries,
@@ -23,7 +37,7 @@ const Contactus = () => {
         </p>
 
         <form
-          className="w-[25rem] flex flex-col gap-5"
+          className="w-full sm:w-[25rem] flex flex-col gap-5"
           action="
         "
         >
@@ -42,12 +56,9 @@ const Contactus = () => {
           </button>
         </form>
       </div>
-      <Image
-        src="/images/contact_img.png"
-        alt="contactus"
-        width={450}
-        height={433}
-      />
+      <div className="relative w-[250px] my-[2rem] md:my-0 h-[237px] md:w-[450px] md:h-[433px]">
+        <Image src="/images/contact_img.png" alt="contactus" fill />
+      </div>
     </section>
   );
 };

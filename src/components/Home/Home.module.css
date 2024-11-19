@@ -7,9 +7,55 @@
 .TestimonialCard {
   box-shadow: 0px 5px 14px 0px #080f340a;
 }
-.HeaderBg{
+.HeaderBg {
   background-image: url("../../../public/images/header_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.Animate3d {
+  animation: moveInFront 2s ease-out;
+}
+
+@keyframes moveInFront {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }

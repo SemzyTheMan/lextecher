@@ -3,6 +3,7 @@ import "./globals.css";
 import { Open_Sans, Raleway } from "next/font/google";
 import TopNav from "@/components/TopNav/TopNav";
 import Footer from "@/components/Footer/Footer";
+import { ScrollProvider } from "@/context/ScrollContext";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
@@ -28,9 +29,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${openSans.variable} ${raleway.variable} `}>
       <body className={`font-sans antialiased`}>
-        <TopNav />
-        <section className="mt-[5.25rem]"> {children}</section>
-        <Footer />
+        <ScrollProvider>
+          <TopNav />
+          <section className="mt-[5.25rem]"> {children}</section>
+          <Footer />
+        </ScrollProvider>
       </body>
     </html>
   );
