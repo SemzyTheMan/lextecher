@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <>
       <section className="md:p-[4rem] px-5 py-[3rem]  grid relative gap-8 text-white md:grid-cols-12 bg-primary">
-        <h2 className="font-bold text-[4rem] md:text-[13.75rem] footerbacktext absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] ">
+        <h2 className="font-bold text-[4rem] md:text-[10rem] footerbacktext absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] ">
           LEXTECHER
         </h2>
         <div className="md:col-span-3">

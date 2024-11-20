@@ -108,7 +108,7 @@ const BlogCard = ({
       transition={{ duration: 0.8, ease: ["easeIn", "easeOut"] }}
       className={`w-full  `}
     >
-      <div className="relative w-full  md:w-[360px] h-[250px]">
+      <div className="relative w-full   h-[250px]">
         <Image
           src={`/images/blog-${imageNo}.png`}
           fill
@@ -117,10 +117,10 @@ const BlogCard = ({
         />
       </div>
 
-      <h2 className="font-raleway text-base md:text-xl md:h-[9rem]  text-dark38 font-semibold py-5">
+      <h2 className="font-raleway text-base lg:text-xl md:h-[9rem]  text-dark38 font-semibold py-5">
         {header}
       </h2>
-      <p className="text-grey54 text-sm md:text-base md:h-[4rem]">{body}</p>
+      <p className="text-grey54 text-sm lg:text-base md:h-[4rem]">{body}</p>
       <button
         onClick={onClick}
         className="pt-11 hover:opacity-50 cursor-pointer text-sm text-secondary font-semibold underline"

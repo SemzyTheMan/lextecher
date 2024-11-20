@@ -29,7 +29,7 @@ const OurServices = () => {
       className={`${styles.Background} p-5 md:p-[4rem] w-full relative  h-fit bg-lightGreen`}
     >
       <h3 className="text-center text-secondary">OUR SERVICES</h3>
-      <h1 className="backtext text-center text-[2rem] md:text-[6rem] font-semibold absolute top-[1rem] md:top-0 left-[50%] transform translate-x-[-50%]">
+      <h1 className="backtext text-center text-[2rem] md:text-[6rem] text-nowrap font-semibold absolute top-[1rem] md:top-0 left-[50%] transform translate-x-[-50%]">
         OUR SERVICES
       </h1>
       <p className="text-dark38 text-center mb-16  font-raleway text-2xl font-semibold">{`What we do & how we can help you`}</p>
