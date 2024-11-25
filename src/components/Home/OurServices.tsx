@@ -100,10 +100,10 @@ const ContentCard = ({
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeIn" }}
-      className="w-[20.125rem] flex flex-col gap-3 items-center place-items-center"
+      className="w-full max-w-[20.125rem] flex flex-col gap-3 items-center place-items-center"
     >
       {icon}
-      <h1 className=" md:text-lg font-raleway font-semibold">{header}</h1>
+      <h1 className=" md:text-lg font-raleway text-center font-semibold">{header}</h1>
       <p className="text-sm md:text-base text-center leading-8 text-grey54">
         {body}
       </p>
