@@ -61,10 +61,32 @@ const Footer = () => {
             <p className="font-bold">(+234) 7083963708, (+234) 8142485201</p>
           </div>
           <div className="flex gap-3 items-start">
-            <FacebookIcon />
-            <InstagramIcon />
-            <LinkedInIcon />
-            <TwitterIcon />
+            <a href="">
+              <FacebookIcon />
+            </a>
+            <a
+              href="https://www.instagram.com/lextechker?igsh=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr "
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <InstagramIcon />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/lex-techker-advisory/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              <LinkedInIcon />
+            </a>
+            <a
+              href="https://x.com/LexTechker"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              <TwitterIcon />
+            </a>
           </div>
         </div>
       </section>

@@ -2,15 +2,44 @@
 import Image from "next/image";
 import { ContactDate } from "../icons/HomeIcons";
 import styles from "./Home.module.css";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useScroll } from "@/context/ScrollContext";
+
 const Contactus = () => {
   const { registerSection } = useScroll();
   const sectionRef = useRef(null);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [status, setStatus] = useState("");
 
   useEffect(() => {
     registerSection("contact", sectionRef.current);
   }, []);
+
+  const handleFormSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus("Sending...");
+
+    try {
+      const res = await fetch("/api/send", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (res.ok) {
+        setFormData({ name: "", email: "", message: "" });
+        setStatus(" Message sent successfully!");
+      } else {
+        setStatus("An Error occurred, please try again");
+      }
+    } catch (error) {
+      setStatus(`${error}`);
+    }
+  };
 
   return (
     <section
@@ -37,24 +66,55 @@ const Contactus = () => {
         </p>
 
         <form
+          onSubmit={handleFormSubmit}
           className="w-full sm:w-[25rem] flex flex-col gap-5"
           action="
         "
         >
-          <input type="text" className={`${inputClass}`} placeholder="Name" />
-          <input type="text" className={`${inputClass}`} placeholder="Email" />
+          <input
+            value={formData.name}
+            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+            type="text"
+            className={`${inputClass}`}
+            placeholder="Name"
+          />
+          <input
+            value={formData.email}
+            onChange={(e) =>
+              setFormData({ ...formData, email: e.target.value })
+            }
+            type="text"
+            className={`${inputClass}`}
+            placeholder="Email"
+          />
           <textarea
+            value={formData.message}
+            onChange={(e) =>
+              setFormData({ ...formData, message: e.target.value })
+            }
             className="border text-grey54 rounded-[1.25rem] outline-0 p-4 border-greyD9  h-[7.1875rem]"
             placeholder="Message"
           />
-          <button className="text-primary mb-3 mt-8 text-lg font-semibold bg-secondary h-[3.75rem] rounded-[1.25rem]">
+          <button
+            disabled={formData.message == "" || status == "Sending..."}
+            type="submit"
+            className="text-primary disabled:opacity-30 mb-1 mt-8 text-lg font-semibold bg-secondary h-[3.75rem] rounded-[1.25rem]"
+          >
             Submit
           </button>
-          <button className="flex justify-center text-white text-lg font-semibold bg-primary rounded-[1.25rem] h-[3.75rem] items-center gap-3">
+          <p className="text-primary py-2 text-lg text-center">{status}</p>
+        </form>
+        <button className=" w-full  sm:w-[25rem]  text-white text-lg font-semibold bg-primary rounded-[1.25rem] h-[3.75rem] ">
+          <a
+            className="flex justify-center items-center gap-3"
+            href="https://calendly.com/lextechkeradvisory/consultation"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <ContactDate />
             <p>Book a consultation</p>
-          </button>
-        </form>
+          </a>
+        </button>
       </div>
       <div className="relative w-[250px] my-[2rem] md:my-0 h-[237px] md:w-[450px] md:h-[433px]">
         <Image src="/images/contact_img.png" alt="contactus" fill />

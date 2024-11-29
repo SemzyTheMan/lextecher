@@ -24,7 +24,7 @@ const OurTeam = () => {
         <OurTeamCard img="5" name="Femi Kolawole" role="Legal Researcher" />
         <OurTeamCard img="6" name="Tolulope Idowu" role="Lead Lawyer" />
         <OurTeamCard
-          className="relative left-[50vw] transform translate-x-[-70%] md:left-0 md:translate-x-0"
+          className="col-span-full place-items-center items "
           img="7"
           name="Salome Olonode"
           role="Assisting Lawyer"
@@ -55,7 +55,7 @@ const OurTeamCard = ({
 }) => {
   return (
     <div className={`flex flex-col items-center ${className}`}>
-      <div className="w-[160px] relative h-[160px] rounded-[50%]">
+      <div className="w-[160px] relative h-[168px] rounded-[50%]">
         <Image
           src={`/images/team-${img}.jpeg`}
           alt="team_img"

@@ -26,9 +26,12 @@ const HeaderSection = () => {
             placeholder="Ask us a question..."
             className=" w-full text-grey66 pr-[5rem]  pl-[2.5rem] outline-0 h-full rounded-[1.25rem]"
           />
-          <div className="absolute  h-[2.5rem] md:h-[3.5rem] hover:opacity-[90%] cursor-pointer  w-[3.5rem] md:w-[4.75rem] grid place-items-center bg-secondary rounded-[1.25rem] top-0 right-0">
+          <a
+            href="mailto:lextechkeradvisory@gmail.com"
+            className="absolute  h-[2.5rem] md:h-[3.5rem] hover:opacity-[90%] cursor-pointer  w-[3.5rem] md:w-[4.75rem] grid place-items-center bg-secondary rounded-[1.25rem] top-0 right-0"
+          >
             <InputIcon />
-          </div>
+          </a>
         </div>
       </div>
       <motion.div
