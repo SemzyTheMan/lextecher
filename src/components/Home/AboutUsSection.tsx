@@ -67,20 +67,27 @@ const AboutUsSection = () => {
           transition={{ duration: 0.8, ease: ["easeIn", "easeOut"] }}
           className="text-grey54 text-sm  md:text-base leading-7 md:leading-9"
         >
-          At Lex Techker Advisory, we specialize in helping tech startups
-          navigate and overcome complex legal hurdles, guiding them from the lab
-          to the market with confidence. Our services include comprehensive
-          legal research, expert writing, and tailored advisory solutions
-          designed to ensure compliance and promote sustainable growth. We
-          provide strategic counsel that empowers startups to mitigate risks,
-          protect their intellectual property, and stay ahead in a competitive
-          market. Our mission is to be a trusted partner for innovation,
-          ensuring that legal challenges never stand in the way of progress.
+          At Lex Techker Advisory, we specialize in a rich blend of
+          technological/digital innovation expertise and legal knowledge.
+          <br />
+          With a focus on moving Nigeria and the general African continent to
+          become a top player in the global Tech/digital innovation market, We
+          help tech start-ups overcome complex tech entrepreneurship and legal
+          hurdles, guiding them from the lab to the market through our
+          expertise.
+          <br />
+          Our services include comprehensive research and writing services, and
+          tailored consultancy solutions designed to help your startup scale in
+          the global market.
+          <br />
+          Our mission is to be your trusted partner for innovations, ensuring
+          that you overcome every challenge standing in the way of the progress
+          of your Tech startup.
         </motion.p>
         <motion.h1
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8,ease:"easeIn" }}
+          transition={{ duration: 0.8, ease: "easeIn" }}
           className="backtext font-raleway text-[2rem] md:text-[6rem] md:leading-[6rem] font-semibold absolute top-0 md:-top-[1.4rem] left-0"
         >
           ABOUT US{" "}

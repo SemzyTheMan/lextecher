@@ -19,7 +19,7 @@ const OurTeamContent = () => {
         <MyImage src={"/images/team-1.jpeg"} />
         <div>
           <h1 className={`${nameClass}`}>Iyinpemi Adegbenga</h1>
-          <p className={`${roleClass}`}>Founder</p>
+          <p className={`${roleClass}`}>Founder/CEO</p>
           <div className="flex flex-col gap-7 text-sm md:text-base text-grey54 leading-7 md:leading-9">
             <p>
               Iyinpemi is a law graduate from the University of Lagos. She is a

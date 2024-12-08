@@ -40,6 +40,11 @@ const OurServices = () => {
           body="We carry out thorough research and write articles on legal developments, analyzing emerging tech trends, inventions and innovations, and tech policies worldwide"
         />
         <ContentCard
+          icon={<TechAdvisoryIcon />}
+          header="Tech Entrepreneurship Advisory"
+          body="We help Tech start-ups build from the Lab to the market. We also help incumbent firms leverage breakthrough tecnologies to remain relevant."
+        />
+        <ContentCard
           icon={<CyberSecurityIcon />}
           header="Cybersecurity"
           body="We provide cybersecurity services by helping businesses comply with laws, handle breaches, and implement best practices."
@@ -51,13 +56,8 @@ const OurServices = () => {
         />
         <ContentCard
           icon={<DataPrivacyIcon />}
-          header="Data Privacy & Protection"
+          header="Data Protection"
           body="We navigate laws, and proffer advice on compliance and data protection strategies."
-        />
-        <ContentCard
-          icon={<ContractIcon />}
-          header="Contract Negotiation & Drafting"
-          body="We draft and negotiate tech-related contracts."
         />
         <ContentCard
           icon={<PartnershipIcon />}
@@ -65,19 +65,19 @@ const OurServices = () => {
           body="We partner with various industry stakeholders to work on projects that require both legal and tech expertise, and provide training services where required."
         />
         <ContentCard
-          icon={<TechAdvisoryIcon />}
-          header="Tech Advisory Role"
-          body="We help Tech start-ups build from the Lab to the market. We also help incumbent firms leverage breakthrough tecnologies to remain relevant."
-        />
-        <ContentCard
-          icon={<LegalAdvisoryIcon />}
-          header="Legal Advisory Role"
-          body="We provide legal advisory services to Tech startups and incumbents, helping them navigate compliance and legal challenges."
-        />
-        <ContentCard
           icon={<RegulatoryIcon />}
           header="Regulatory Compliance"
           body="We implement and maintain processes and practices that ensure adherence to relevant laws, regulations, and industry standards."
+        />
+        <ContentCard
+          icon={<ContractIcon />}
+          header="Contract Negotiation & Drafting"
+          body="We draft and negotiate tech-related contracts."
+        />
+        <ContentCard
+          icon={<LegalAdvisoryIcon />}
+          header="Legal Advisory"
+          body="We provide legal advisory services to Tech startups and incumbents, helping them navigate compliance and legal challenges."
         />
       </div>
     </section>
@@ -103,7 +103,9 @@ const ContentCard = ({
       className="w-full max-w-[20.125rem] flex flex-col gap-3 items-center place-items-center"
     >
       {icon}
-      <h1 className=" md:text-lg font-raleway text-center font-semibold">{header}</h1>
+      <h1 className=" md:text-lg font-raleway text-center font-semibold">
+        {header}
+      </h1>
       <p className="text-sm md:text-base text-center leading-8 text-grey54">
         {body}
       </p>

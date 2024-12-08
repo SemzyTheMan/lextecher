@@ -1,6 +1,10 @@
-import Image from "next/image";
+"use client"
+import { useRouter } from "next/navigation";
+import styles from "./Home.module.css";
 
 const OurTeam = () => {
+  const router = useRouter();
+
   return (
     <section className="p-5 md:p-[4rem] relative">
       <h3 className="text-center text-secondary">OUR TEAM</h3>
@@ -11,7 +15,7 @@ const OurTeam = () => {
         OUR TEAM
       </h1>
       <div className="md:flex grid grid-cols-2 md:justify-center items-center gap-10 md:gap-[6rem]">
-        <OurTeamCard img="1" name="Iyinpemi Adegbenga" role="Founder" />
+        <OurTeamCard img="1" name="Iyinpemi Adegbenga" role="Founder/CEO" />
         <OurTeamCard img="2" name="Temilola Akinola" role="Co-Founder" />
         <OurTeamCard img="3" name="Sunmibola Onifade" role="Co-Founder" />
         <OurTeamCard
@@ -31,7 +35,10 @@ const OurTeam = () => {
         />
       </div>
 
-      <div className="flex justify-end">
+      <div
+        onClick={() => router.push("/our-team")}
+        className="flex justify-end"
+      >
         <button className="md:px-6 my-10 font-raleway hover:opacity-[80%] underline text-secondary font-semibold">
           See More Details
         </button>
@@ -55,14 +62,10 @@ const OurTeamCard = ({
 }) => {
   return (
     <div className={`flex flex-col items-center ${className}`}>
-      <div className="w-[160px] relative h-[168px] rounded-[50%]">
-        <Image
-          src={`/images/team-${img}.jpeg`}
-          alt="team_img"
-          fill
-          className="rounded-[50%]"
-        />
-      </div>
+      <div
+        style={{ backgroundImage: `url(/images/team-${img}.jpeg)` }}
+        className={`${styles.Background_img} w-[160px] relative h-[160px] rounded-[50%]`}
+      ></div>
 
       <h1 className="text-dark38 mt-5 mb-2 text-[12px] text-nowrap  md:text-xl font-raleway font-semibold">
         {name}

@@ -70,3 +70,9 @@
   background-color: white;
   transform: scale(1.05) !important;
 }
+.Background_img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+ 
+}
