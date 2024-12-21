@@ -42,7 +42,7 @@ const OurServices = () => {
         <ContentCard
           icon={<TechAdvisoryIcon />}
           header="Tech Entrepreneurship Advisory"
-          body="We help Tech start-ups build from the Lab to the market. We also help incumbent firms leverage breakthrough tecnologies to remain relevant."
+          body="We help Tech start-ups build from the Lab to the market. We also help incumbent firms leverage breakthrough technologies to remain relevant."
         />
         <ContentCard
           icon={<CyberSecurityIcon />}

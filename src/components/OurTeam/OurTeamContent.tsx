@@ -71,10 +71,12 @@ const OurTeamContent = () => {
             <p>
               Dedicated to the core values of Lex Techker Advisory, Temilola
               prioritizes learning and personal development by taking courses in
-              cybersecurity. She is also currently an intern at the Hilton Top
-              Solicitors Female Virtual Internship Programme. Temilola is the
-              Head of the Directorate of Partnership and Strategies of WALSA
-              (West African Law Students Association).
+              cybersecurity. She was an intern at the Hilton Top Solicitors
+              Female Virtual Internship Programme Cohort 8.0 and she holds a
+              certificate in the Havard University&apos;s online course on
+              Technology Entrepreneurship:Lab to Market. Temilola is the Head of
+              the Directorate of Partnership and Strategies of WALSA (West
+              African Law Students Association).
             </p>
           </div>
         </div>
@@ -154,6 +156,14 @@ const OurTeamContent = () => {
           </div>
         </div>
       </div>
+      <div className={`${styles.Header} h-[28.625rem] md:h-[36.5rem] w-full`}>
+        <div className="w-full h-full gap-7 flex flex-col justify-center items-center">
+          <p className="text-white font-semibold tracking-widest">OUR LAWYERS</p>
+          <h1 className="font-raleway text-[2.5rem] text-dark38  font-bold">
+            Meet our Lawyers
+          </h1>
+        </div>
+      </div>
       <div className="p-5 py-[3rem] md:p-[4rem] bg-lightGreen flex flex-col-reverse md:grid md:grid-cols-[2fr_1fr] md:gap-[6rem]">
         <div>
           <h1 className={`${nameClass}`}>Tolulope Idowu</h1>
@@ -200,7 +210,7 @@ const OurTeamContent = () => {
 
 export default OurTeamContent;
 const MyImage = ({ src }: { src: string }) => (
-  <div className="w-full relative h-[400px] md:w-[450px] md:h-[450px]">
+  <div className="w-full relative h-[460px] md:w-[450px] md:h-[600px]">
     {" "}
     <Image fill className="rounded-[1.25rem]" src={src} alt="team_member" />
   </div>

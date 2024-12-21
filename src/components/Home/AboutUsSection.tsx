@@ -71,7 +71,7 @@ const AboutUsSection = () => {
           technological/digital innovation expertise and legal knowledge.
           <br />
           With a focus on moving Nigeria and the general African continent to
-          become a top player in the global Tech/digital innovation market, We
+          become a top player in the global Tech/digital innovation market, we
           help tech start-ups overcome complex tech entrepreneurship and legal
           hurdles, guiding them from the lab to the market through our
           expertise.
