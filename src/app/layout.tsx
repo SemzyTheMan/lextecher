@@ -17,8 +17,8 @@ const raleway = Raleway({
 });
 
 export const metadata: Metadata = {
-  title: "Lextecher",
-  description: "Lextecher professional website",
+  title: "Lextechker",
+  description: "Lextechker professional website",
 };
 
 export default function RootLayout({
