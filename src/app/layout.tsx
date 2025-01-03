@@ -17,7 +17,7 @@ const raleway = Raleway({
 });
 
 export const metadata: Metadata = {
-  title: "Lextechker",
+  title: "Lex Techker Advisory",
   description: "Lextechker professional website",
 };
 
